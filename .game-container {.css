@@ -1,0 +1,56 @@
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-board {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game-board .board-square {
+  width: 62.5px;
+  height: 62.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.game-board .board-square.white {
+  background-color: #f0d9b5;
+}
+
+.game-board .board-square.black {
+  background-color: #b58863;
+}
+
+.game-info {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-history {
+  margin-bottom: 20px;
+}
+
+.game-history h3,
+.game-timer h3 {
+  margin-top: 0;
+}
+
+.game-history ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.game-timer #timer {
+  font-size: 40px;
+  font-weight: bold;
+}
